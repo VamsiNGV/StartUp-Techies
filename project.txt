@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+#header {
+    background-color:orange;
+    color:white;
+    text-align:left;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    color:Red;
+    width:120px;
+    float:left;
+    padding:5px;	      
+}
+#section {
+    width:350px;
+    float:left;
+    padding:10px;	 	 
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 
+   
+}
+
+#mySlides {
+    margin: 100px;   
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: green;
+}
+
+	 
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+
+<h1>Electronics Hub</h1>
+<p style="
+    margin-left: 100px; margin-top:-25px;
+">Skill Development </p>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#services" class="page-scroll">Services</a></li>
+  <li><a href="#team" class="page-scroll">Team</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li ><a href="#about">About</a></li>
+</ul>
+</div>
+
+<div id="nav">
+Microprocessors<br>
+Microcontrollers<br>
+Resistors<br>
+Capacitors<br>
+Diodes
+</div>
+
+<!--h2 class="w3-center">Manual Slideshow</h2-->
+
+<div class="w3-content w3-display-container">
+  <img src="Board.jpg" width="44%" height="267" class="mySlides" style="width:50%" ><img class="mySlides" src="Complete.jpg" style="width:50%" ><img class="mySlides" src="Chip.jpg" style="width:50%" width="275"><img class="mySlides" src="IC.jpg" style="width:50%">
+
+  <!--button class="w3-button w3-black w3-display-left" onClick="plusDivs(-1)">&#10094;</button-->
+  <!--button class="w3-button w3-black w3-display-right" onClick="plusDivs(1)">&#10095;</button-->
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<!--div id="section">
+<h2>Microprocessors</h2>
+<p>London is the capital city of England. It is the most populous city in the United Kingdom,
+with a metropolitan area of over 13 million inhabitants.</p>
+<p>Standing on the River Thames, London has been a major settlement for two millennia,
+its history going back to its founding by the Romans, who named it Londinium.</p>
+
+<h2>MicroControllers</h2>
+<p>Capetown is the capital city of England. It is the most populous city in the United Kingdom,
+with a metropolitan area of over 13 million inhabitants.</p>
+<p>Standing on the River Thames, London has been a major settlement for two millennia,
+its history going back to its founding by the Romans, who named it Londinium.</p>
+
+<h2>Resistors</h2>
+<p>Welllington is the capital city of England. It is the most populous city in the United Kingdom,
+with a metropolitan area of over 13 million inhabitants.</p>
+<p>Standing on the River Thames, London has been a major settlement for two millennia,
+its history going back to its founding by the Romans, who named it Londinium.</p>
+
+
+<h2>Capacitors</h2>
+<p>Canberra is the capital city of England. It is the most populous city in the United Kingdom,
+with a metropolitan area of over 13 million inhabitants.</p>
+<p>Standing on the River Thames, London has been a major settlement for two millennia,
+its history going back to its founding by the Romans, who named it Londinium.</p>
+
+<h2>Diodes</h2>
+<p>Welllington is the capital city of England. It is the most populous city in the United Kingdom,
+with a metropolitan area of over 13 million inhabitants.</p>
+<p>Standing on the River Thames, London has been a major settlement for two millennia,
+its history going back to its founding by the Romans, who named it Londinium.</p>
+
+</div-->
+
+<div id="footer">
+Copyright © W3Schools.com
+</div>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_divs by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:02:55 GMT -->
+</html>
